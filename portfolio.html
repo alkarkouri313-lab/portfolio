@@ -1,143 +1,124 @@
+
 <!DOCTYPE html>
 <html lang="nl-BE">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Ayman Al Karkouri</title>
-    <meta name="description" content="Bekijk mijn IT-projecten rond netwerken, Windows Server, Linux, VMware en webtechnologie. Ontdek wat ik leer tijdens mijn opleiding aan AP Hogeschool.">
+    <meta name="description" content="Bekijk mijn IT-projecten rond netwerken, Windows Server, Linux, VMware en webtechnologie.">
     <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/portfolio.js"></script>
+<script defer src="js/menu.js"></script>
 </head>
 
 <body class="bg-slate-50 text-slate-900">
 
-
 <a href="#inhoud"
-   class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 bg-sky-400 text-slate-900 p-3 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+   class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 bg-sky-400 text-slate-900 p-3 rounded-lg">
     Ga naar de inhoud
 </a>
 
-
 <header class="bg-white border-b border-slate-200">
     <div class="max-w-6xl mx-auto p-4 flex flex-wrap items-center justify-between gap-4">
+
         <a href="index.html">
             <img src="images/schermafbeelding.png" alt="Logo"
                  class="w-14 h-14 object-contain">
         </a>
 
         <input type="checkbox" id="menu" class="peer sr-only">
+
+        <label for="menu"
+               class="md:hidden bg-sky-400 px-4 py-2 rounded cursor-pointer peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-blue-700">
+            Menu
+        </label>
+
         
-<label for="menu"
-       class="md:hidden bg-sky-400 px-4 py-2 rounded cursor-pointer peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-blue-700">
-    Menu
-</label>
+<nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
+    <ul class="flex flex-col md:flex-row gap-3">
 
+        <li>
+            <a href="index.html" class="block hover:text-sky-600">
+                Home
+            </a>
+        </li>
 
-        <nav class="hidden w-full peer-checked:block md:block md:w-auto">
-            <ul class="flex flex-col md:flex-row gap-3">
-                <li><a href="index.html" class="block hover:text-sky-600">Home</a></li>
-                <li><a href="portfolio.html" class="block text-sky-600 font-semibold">Portfolio</a></li>
-                <li><a href="project.html" class="block hover:text-sky-600">Project</a></li>
-                <li><a href="contact.html" class="block hover:text-sky-600">Contact</a></li>
+        <li class="group relative">
+
+            <a href="portfolio.html" aria-current="page"
+               class="block text-sky-600 font-semibold">
+                Portfolio
+            </a>
+
+            <ul class="absolute left-0 top-full z-10 hidden w-48 rounded-lg border bg-white p-2 shadow-lg group-hover:block group-focus-within:block">
+
+                <li>
+                    <a href="netwerken.html" class="block rounded px-3 py-2 hover:bg-gray-100">
+                        Netwerken
+                    </a>
+                </li>
+
+                <li>
+                    <a href="windows-server.html" class="block rounded px-3 py-2 hover:bg-gray-100">
+                        Windows Server
+                    </a>
+                </li>
+
+                <li>
+                    <a href="linux.html" class="block rounded px-3 py-2 hover:bg-gray-100">
+                        Linux
+                    </a>
+                </li>
+
+                <li>
+                    <a href="packet-tracer.html" class="block rounded px-3 py-2 hover:bg-gray-100">
+                        Packet Tracer
+                    </a>
+                </li>
+
+                <li>
+                    <a href="vmware.html" class="block rounded px-3 py-2 hover:bg-gray-100">
+                        VMware
+                    </a>
+                </li>
+
+                <li>
+                    <a href="webtechnologie.html" class="block rounded px-3 py-2 hover:bg-gray-100">
+                        Webtechnologie
+                    </a>
+                </li>
+
             </ul>
-        </nav>
+
+        </li>
+
+        <li>
+            <a href="contact.html" class="block hover:text-sky-600">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+</nav>
+
+
     </div>
 </header>
 
 <div class="max-w-6xl mx-auto p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
 
-   
-<main id="inhoud" class="md:col-span-2 lg:col-span-3">
+    <main id="inhoud" class="md:col-span-2 lg:col-span-3">
 
         <h1 class="text-3xl font-bold mb-6">Mijn projecten</h1>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <p id="melding" role="status" class="text-gray-600">
+            Projecten laden...
+        </p>
 
-            <article class="bg-white border rounded-lg p-3 flex sm:block gap-3">
-                <img src="images/netwerk.png" alt="Netwerkapparatuur"
-                     class="w-24 h-24 sm:w-full sm:h-32 object-cover rounded">
-                <div class="flex-1">
-                    <h2 class="font-semibold mt-2">Netwerken</h2>
-                    <p class="text-sm text-gray-600 my-2">
-                        Werken met routers en switches.
-                    </p>
-                    <a href="project.html" class="block bg-sky-400 text-center rounded p-2 font-semibold hover:bg-sky-300">
-                        Bekijk
-                    </a>
-                </div>
-            </article>
-
-            <article class="bg-white border rounded-lg p-3 flex sm:block gap-3">
-                <img src="images/Server.png" alt="Serverruimte"
-                     class="w-24 h-24 sm:w-full sm:h-32 object-cover rounded">
-                <div class="flex-1">
-                    <h2 class="font-semibold mt-2">Windows Server</h2>
-                    <p class="text-sm text-gray-600 my-2">
-                        Werken met Windows Server.
-                    </p>
-                    <a href="project.html" class="block bg-sky-400 text-center rounded p-2 font-semibold hover:bg-sky-300">
-                        Bekijk
-                    </a>
-                </div>
-            </article>
-
-            <article class="bg-white border rounded-lg p-3 flex sm:block gap-3">
-                <img src="images/werkplek.png" alt="IT-werkplek"
-                     class="w-24 h-24 sm:w-full sm:h-32 object-cover rounded">
-                <div class="flex-1">
-                    <h2 class="font-semibold mt-2">Linux</h2>
-                    <p class="text-sm text-gray-600 my-2">
-                        Bestanden en commando's gebruiken.
-                    </p>
-                    <a href="project.html" class="block bg-sky-400 text-center rounded p-2 font-semibold hover:bg-sky-300">
-                        Bekijk
-                    </a>
-                </div>
-            </article>
-
-            <article class="bg-white border rounded-lg p-3 flex sm:block gap-3">
-                <img src="images/netwerk.png" alt="Netwerkkabels"
-                     class="w-24 h-24 sm:w-full sm:h-32 object-cover rounded">
-                <div class="flex-1">
-                    <h2 class="font-semibold mt-2">Packet Tracer</h2>
-                    <p class="text-sm text-gray-600 my-2">
-                        Computernetwerken simuleren.
-                    </p>
-                    <a href="project.html" class="block bg-sky-400 text-center rounded p-2 font-semibold hover:bg-sky-300">
-                        Bekijk
-                    </a>
-                </div>
-            </article>
-
-            <article class="bg-white border rounded-lg p-3 flex sm:block gap-3">
-                <img src="images/Server.png" alt="Servers"
-                     class="w-24 h-24 sm:w-full sm:h-32 object-cover rounded">
-                <div class="flex-1">
-                    <h2 class="font-semibold mt-2">VMware</h2>
-                    <p class="text-sm text-gray-600 my-2">
-                        Virtuele machines gebruiken.
-                    </p>
-                    <a href="project.html" class="block bg-sky-400 text-center rounded p-2 font-semibold hover:bg-sky-300">
-                        Bekijk
-                    </a>
-                </div>
-            </article>
-
-            <article class="bg-white border rounded-lg p-3 flex sm:block gap-3">
-                <img src="images/werkplek.png" alt="Computerwerkplek"
-                     class="w-24 h-24 sm:w-full sm:h-32 object-cover rounded">
-                <div class="flex-1">
-                    <h2 class="font-semibold mt-2">Webtechnologie</h2>
-                    <p class="text-sm text-gray-600 my-2">
-                        Websites maken met HTML en Tailwind.
-                    </p>
-                    <a href="project.html" class="block bg-sky-400 text-center rounded p-2 font-semibold hover:bg-sky-300">
-                        Bekijk
-                    </a>
-                </div>
-            </article>
-
+        <div id="lijst" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         </div>
+
     </main>
 
     <aside class="bg-white border rounded-lg p-5">
@@ -153,6 +134,30 @@
     </aside>
 
 </div>
+
+<template id="sjabloon">
+
+    <article class="bg-white border rounded-lg p-3 flex sm:block gap-3">
+
+        <img data-veld="afbeelding" alt=""
+             class="w-24 h-24 sm:w-full sm:h-32 object-cover rounded">
+
+        <div class="flex-1">
+
+            <h2 data-veld="titel" class="font-semibold mt-2"></h2>
+
+            <p data-veld="samenvatting" class="text-sm text-gray-600 my-2"></p>
+
+            <a data-veld="link"
+               class="block bg-sky-400 text-center rounded p-2 font-semibold hover:bg-sky-300">
+                Bekijk
+            </a>
+
+        </div>
+
+    </article>
+
+</template>
 
 <footer class="max-w-6xl mx-auto bg-white border rounded-lg p-5 mb-5 flex flex-wrap justify-between gap-3">
     <p>© 2026 Ayman Al Karkouri</p>

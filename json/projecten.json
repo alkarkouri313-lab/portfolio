@@ -1,0 +1,45 @@
+
+[
+    {
+        "titel": "Netwerken",
+        "samenvatting": "Werken met routers en switches.",
+        "afbeelding": "images/netwerk.png",
+        "alt": "Netwerkapparatuur",
+        "link": "netwerken.html"
+    },
+    {
+        "titel": "Windows Server",
+        "samenvatting": "Werken met Windows Server.",
+        "afbeelding": "images/Server.png",
+        "alt": "Serverruimte",
+        "link": "windows-server.html"
+    },
+    {
+        "titel": "Linux",
+        "samenvatting": "Bestanden en commando's gebruiken.",
+        "afbeelding": "images/werkplek.png",
+        "alt": "IT-werkplek",
+        "link": "linux.html"
+    },
+    {
+        "titel": "Packet Tracer",
+        "samenvatting": "Computernetwerken simuleren.",
+        "afbeelding": "images/netwerk.png",
+        "alt": "Netwerkkabels",
+        "link": "packet-tracer.html"
+    },
+    {
+        "titel": "VMware",
+        "samenvatting": "Virtuele machines gebruiken.",
+        "afbeelding": "images/Server.png",
+        "alt": "Servers",
+        "link": "vmware.html"
+    },
+    {
+        "titel": "Webtechnologie",
+        "samenvatting": "Websites maken met HTML en Tailwind.",
+        "afbeelding": "images/werkplek.png",
+        "alt": "Computerwerkplek",
+        "link": "webtechnologie.html"
+    }
+]

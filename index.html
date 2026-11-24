@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="nl-BE">
 <head>
@@ -5,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ontdek het portfolio van Ayman Al Karkouri, student Systeem- en Netwerkbeheer aan AP Hogeschool. Bekijk mijn projecten en vaardigheden in IT.">
     <title>Home | Ayman Al Karkouri</title>
+
     <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/weer.js"></script>
 </head>
 
 <body class="bg-slate-50 text-slate-900">
@@ -16,40 +21,64 @@
     Ga naar de inhoud
 </a>
 
-
 <header class="bg-white border-b border-slate-200">
     <div class="max-w-6xl mx-auto p-4 flex flex-wrap items-center justify-between gap-4">
+
         <a href="index.html">
             <img src="images/schermafbeelding.png" alt="Logo"
                  class="w-14 h-14 object-contain">
         </a>
 
         <input type="checkbox" id="menu" class="peer sr-only">
-        
-<label for="menu"
-       class="md:hidden bg-sky-400 px-4 py-2 rounded cursor-pointer peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-blue-700">
-    Menu
-</label>
 
+        <label for="menu"
+               class="md:hidden bg-sky-400 px-4 py-2 rounded cursor-pointer peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-blue-700">
+            Menu
+        </label>
 
-        <nav class="hidden w-full peer-checked:block md:block md:w-auto">
+        <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
             <ul class="flex flex-col md:flex-row gap-3">
-                <li><a href="index.html" class="block text-sky-600 font-semibold">Home</a></li>
-                <li><a href="portfolio.html" class="block hover:text-sky-600">Portfolio</a></li>
-                <li><a href="project.html" class="block hover:text-sky-600">Project</a></li>
-                <li><a href="contact.html" class="block hover:text-sky-600">Contact</a></li>
+
+                <li>
+                    <a href="index.html" aria-current="page" class="block text-sky-600 font-semibold">Home</a>
+                </li>
+
+                <li class="group relative">
+                    <a href="portfolio.html" class="block hover:text-sky-600">Portfolio</a>
+
+                    <ul class="absolute left-0 top-full z-10 hidden w-48 rounded-lg border bg-white p-2 shadow-lg group-hover:block group-focus-within:block">
+
+                        <li><a href="netwerken.html" class="block rounded px-3 py-2 hover:bg-gray-100">Netwerken</a></li>
+
+                        <li><a href="windows-server.html" class="block rounded px-3 py-2 hover:bg-gray-100">Windows Server</a></li>
+
+                        <li><a href="linux.html" class="block rounded px-3 py-2 hover:bg-gray-100">Linux</a></li>
+
+                        <li><a href="packet-tracer.html" class="block rounded px-3 py-2 hover:bg-gray-100">Packet Tracer</a></li>
+
+                        <li><a href="vmware.html" class="block rounded px-3 py-2 hover:bg-gray-100">VMware</a></li>
+
+                        <li><a href="webtechnologie.html" class="block rounded px-3 py-2 hover:bg-gray-100">Webtechnologie</a></li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="block hover:text-sky-600">Contact</a>
+                </li>
+
             </ul>
         </nav>
+
     </div>
 </header>
 
 <div class="max-w-6xl mx-auto p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
 
-    
-<main id="inhoud" class="md:col-span-2 lg:col-span-3">
-
+    <main id="inhoud" class="md:col-span-2 lg:col-span-3">
 
         <section class="bg-slate-900 text-white rounded-lg p-8 md:p-12 text-center mb-5">
+
             <h1 class="text-3xl md:text-4xl font-bold mb-4">
                 Welkom op mijn persoonlijke portfolio
             </h1>
@@ -65,43 +94,83 @@
                class="inline-block bg-sky-400 text-slate-900 px-6 py-3 rounded-lg font-semibold hover:bg-sky-300">
                 Bekijk mijn projecten
             </a>
+
         </section>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
             <article class="bg-white border rounded-lg p-5 text-center">
+
                 <div class="w-14 h-14 bg-sky-100 rounded-full mx-auto mb-3 flex items-center justify-center text-2xl">
-                    
                 </div>
+
                 <h2 class="font-semibold text-lg mb-2">Computers</h2>
+
                 <p class="text-gray-600">
                     Ik ben geïnteresseerd in computers en technologie.
                 </p>
+
             </article>
 
             <article class="bg-white border rounded-lg p-5 text-center">
+
                 <div class="w-14 h-14 bg-sky-100 rounded-full mx-auto mb-3 flex items-center justify-center text-2xl">
-                    
                 </div>
+
                 <h2 class="font-semibold text-lg mb-2">Netwerken</h2>
+
                 <p class="text-gray-600">
                     Ik leer hoe computers en netwerken samenwerken.
                 </p>
+
             </article>
 
             <article class="bg-white border rounded-lg p-5 text-center">
+
                 <div class="w-14 h-14 bg-sky-100 rounded-full mx-auto mb-3 flex items-center justify-center text-2xl">
-                    
                 </div>
+
                 <h2 class="font-semibold text-lg mb-2">Systemen</h2>
+
                 <p class="text-gray-600">
                     Ik wil mijn kennis van systeembeheer uitbreiden.
                 </p>
+
             </article>
 
         </div>
+
+        <section class="bg-white border rounded-lg p-5 mt-5">
+
+            <h2 class="text-2xl font-bold mb-3">
+                Het actuele weer in Antwerpen
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+                Bekijk de actuele temperatuur en windsnelheid.
+                Deze gegevens worden automatisch opgehaald via de Open-Meteo API.
+            </p>
+
+            <p id="weer-melding" role="status" class="text-gray-600">
+                Weergegevens laden...
+            </p>
+
+            <div id="weer-lijst"></div>
+
+            <p class="text-sm text-gray-600 mt-4">
+                Bron:
+                <a href="https://open-meteo.com/"
+                   class="text-blue-700 underline">
+                    Open-Meteo
+                </a>
+            </p>
+
+        </section>
+
     </main>
 
     <aside class="bg-white border rounded-lg p-5 flex flex-col gap-4">
+
         <h2 class="text-xl font-bold">Over mij</h2>
 
         <p class="text-gray-700">
@@ -112,37 +181,78 @@
         </p>
 
         <div class="border rounded-lg p-3">
+
             <h3 class="font-semibold">Mijn opleiding</h3>
+
             <p class="text-sm text-gray-600">
                 Graduaat Systeem- en Netwerkbeheer
                 aan AP Hogeschool.
             </p>
+
         </div>
 
         <div class="border rounded-lg p-3">
+
             <h3 class="font-semibold">Mijn doel</h3>
+
             <p class="text-sm text-gray-600">
                 Mijn kennis en vaardigheden in IT
                 verder ontwikkelen.
             </p>
+
         </div>
 
         <div class="bg-sky-100 p-4 rounded-lg mt-auto">
+
             <h3 class="font-semibold mb-2">Contact</h3>
+
             <p class="text-sm mb-3">
                 Wil je meer weten over mij?
             </p>
+
             <a href="contact.html" class="text-blue-700 underline">
                 Neem contact op
             </a>
+
         </div>
+
     </aside>
 
 </div>
 
+<template id="weer-sjabloon">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+        <article class="bg-sky-100 rounded-lg p-5 text-center">
+
+            <h3 class="font-semibold mb-2">
+                Temperatuur
+            </h3>
+
+            <p data-veld="temperatuur" class="text-3xl font-bold text-slate-900"></p>
+
+        </article>
+
+        <article class="bg-sky-100 rounded-lg p-5 text-center">
+
+            <h3 class="font-semibold mb-2">
+                Windsnelheid
+            </h3>
+
+            <p data-veld="windsnelheid" class="text-3xl font-bold text-slate-900"></p>
+
+        </article>
+
+    </div>
+
+</template>
+
 <footer class="max-w-6xl mx-auto bg-white border rounded-lg p-5 mb-5 flex flex-wrap justify-between gap-3">
+
     <p>© 2026 Ayman Al Karkouri</p>
     <p>AP Hogeschool</p>
+
 </footer>
 
 </body>
