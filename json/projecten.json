@@ -10,7 +10,7 @@
     {
         "titel": "Windows Server",
         "samenvatting": "Werken met Windows Server.",
-        "afbeelding": "images/Server.png",
+        "afbeelding": "images/server.png",
         "alt": "Serverruimte",
         "link": "windows-server.html"
     },
@@ -31,7 +31,7 @@
     {
         "titel": "VMware",
         "samenvatting": "Virtuele machines gebruiken.",
-        "afbeelding": "images/Server.png",
+        "afbeelding": "images/server.png",
         "alt": "Servers",
         "link": "vmware.html"
     },
